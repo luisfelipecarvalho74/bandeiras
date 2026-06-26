@@ -155,18 +155,35 @@
     
 }
 
- .jor-vermelho {
-    background-color: red;
-    flex: 1;
+.bandeira-jor {
+    width: 500px;
+    height: 300px;
     display: flex;
-    justify-content: center;
+    margin: 50px;
+    border: solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+ .jor-vermelho {
+    height: 300px;
+    width: 200px;
+    display: flex;
     align-items: center;
-    clip-path:polygon(0% 0%, 0% 100%, 100% 50%);
-    
+    justify-content: center;
+    background-color: red;
+    position: absolute;
+    clip-path:polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
 .jor-estrela {
+    width: 50px;
+    height: 50px;
     background-color: white;
+    position: absolute;
+    left: 20%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     
 }
 
@@ -190,25 +207,159 @@
     flex: 1;
 } 
 
-.trindade-vermelho {
-    background-color: red;
+.bandeira-tri {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin: 50px;
+    border: solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    background: linear-gradient(
+        150deg,
+        #e11b22 0%, #e11b22 38%,
+        #ffffff 38%, #ffffff  42%,
+        #000000 42%, #000000 58%,
+        #ffffff 58%, #ffffff 62%,
+        #e11b22 62%, #e11b22 100%
+    )
+} 
+
+.bandeira-tur {
+    background-color: #e11b22;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border: solid black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.circulo-tur {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 300px;
+    
+} 
+
+.circulo-menor {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #e11b22;
+    position: absolute;
+    margin-right: 260px;
+}
+
+.estrela-tur {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-left: 80px;
+    
+}
+
+.bandeira-grecia {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin: 50px;
+    border: solid black;
+    border-radius: 25px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.quadrado-grecia {
+    background-color: #274DEA;
+    width: 150px;
+    height: 167px;
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center; 
-}
-
-.trindade-branco {
-    background-color: white;
-    flex: 1;
-    height: 105px;
-    transform: rotate(-29deg);
-}
-
-.trindade-preto {
-    background-color: black;    
+    align-items: center;
+    position:absolute;
     
-    transform: rotate(45deg);
+} 
+
+.cruz-grecia {
+    width: 150px;
+    height: 31px;
+    background-color: #ffffff;
+}
+
+.cruz-grecia-deitada {
+    width: 170px;
+    height: 31px;
+    background-color: #ffffff;
+    transform: rotate(90deg);
+    position: absolute;
+    
+} 
+
+.band-grecia {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+.grecia-azul {
+    flex: 1;
+    background-color: #274DEA;
+}
+
+.grecia-branca {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.band-chile {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border: solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+} 
+
+
+.chile-branco {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.chile-vermelho {
+    flex: 1;
+    background-color: #e11b22;
+}
+
+.quadrado-chile {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.estrela-chile {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    clip-path: polygon(50% 100%, 100% 50%, 50% 100%, 100% 50%, 100% 50%);
 }
 
 /* 
@@ -219,7 +370,7 @@
     flex-direction: column;
     position: relative;
     border: 1px solid black;
-}
+    }
 
 .faixa-vermelha {
     flex: 1;
