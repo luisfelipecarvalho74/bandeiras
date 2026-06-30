@@ -1,0 +1,9 @@
+export{}
+
+const quadradoAzul = document.querySelector(".quadrado-azul");
+
+for (let i = 0; i < 50; i++) {
+  const estrelaEua = document.createElement("div");
+  estrelaEua.className = "estrelaEua";
+  quadradoAzul?.appendChild(estrelaEua);
+}

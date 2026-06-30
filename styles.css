@@ -8,63 +8,72 @@
      overflow: hidden;
 } 
 
-.faixa-verde {
-    background-color: green;
+.faixa-azul-fr {
+    background-color: blue;
     flex: 1;
 }
 
-.faixa-branca {
+.faixa-branca-fr {
     background-color: white;
     flex: 1;
 }
 
- .faixa-branca {
+ .faixa-vermelha-fr {
+    background-color: red;
     flex: 1;
-}  
-
- .retangulo {
-    width: 500px;
-    height: 300px;
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.losango {
-    background-color: yellow;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scaleY(.5) rotate(45deg)
-}
-
-.circulo {
-    background-color: blue;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: absolute;
 } 
 
+.bandeira-alemanha {
+    width: 500px;
+     height: 300px;
+     display: flex;
+     margin: 50px;
+     border: solid black;
+     border-radius: 25px;
+     overflow: hidden;
+     flex-direction: column;
+}
 
-.faixa-preta {
+.faixa-preta-ale {
     background-color: black;
     flex: 1;
 }
 
-.faixa-amarela {
+.faixa-vermelha-ale {
+    background-color: red;
+    flex: 1;
+} 
+
+.faixa-amarela-ale {
     background-color: yellow;
     flex: 1;
 }
 
-.faixa-vermelha {
+.bandeira-colombia {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin: 50px;
+    border: solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.amarela-col {
+    background-color: yellow;
+    flex: 2;
+}
+
+.azul-col {
+    background-color: blue;
+    flex: 1;
+}
+
+.vermelha-col {
     background-color: red;
     flex: 1;
-} 
+}
 
 .japao-branca {
     display: flex;
@@ -79,22 +88,6 @@
     height: 150px;
     border-radius: 50%;
 }
-
-.amarela {
-    background-color: yellow;
-    flex: 2;
-}
-
-.azul {
-    background-color: blue;
-    flex: 1;
-}
-
-.vermelha {
-    background-color: red;
-    flex: 1;
-}
-
 
 .ea-vermelho {
     background-color: red;
@@ -122,6 +115,33 @@
     flex: 1;
 }
 
+.retangulo {
+    width: 500px;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.losango {
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(.5) rotate(45deg)
+}
+
+.circulo {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+} 
 
 .quadrado {
     background-color: red;
@@ -359,31 +379,33 @@
     width: 50px;
     height: 50px;
     background-color: #ffffff;
-    clip-path: polygon(50% 100%, 100% 50%, 50% 100%, 100% 50%, 100% 50%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
-
-/* 
-.bandeira-eua {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border: 1px solid black;
+ 
+.bandeiraEua {
+    width: 500px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     margin: 50px;
+     border: solid black;
+     border-radius: 25px;
+     overflow: hidden;
+     position: relative;
     }
 
-.faixa-vermelha {
+.vermelhoEua {
     flex: 1;
     background-color: brown;
 }
 
-.faixa-branca {
+.brancoEua {
     flex: 1;
     background-color: aliceblue;
 }
 
 .quadrado-azul {
-    width: 150px;
+    width: 200px;
     height: calc(100%/13*7);
     background-color: darkblue;
     position: absolute;
@@ -394,9 +416,9 @@
     gap: 7px;
 }
 
-.estrela {
-    width: 5px;
-    height: 5px;
+.estrelaEua {
+    width: 10px;
+    height: 10px;
     background-color: aliceblue;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
-*/
